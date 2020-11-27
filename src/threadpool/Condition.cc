@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-04-16 03:52:08
+ * @LastEditTime: 2020-11-27 10:52:39
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /mymuduo/src/threadpool/Condition.cc
+ */
 //
 //  condition.cpp
 //  mutex condition 互斥锁 条件变量的封装
@@ -6,8 +14,9 @@
 //  Copyright © 2019 ChengWangMacPro15.4. All rights reserved.
 //
 
-#include "condition.hpp"
-#include "mutex.h"
+#include "mymuduo/threadpool/Condition.hpp"
+#include "mymuduo/threadpool/MutexLock.hpp"
+// #include "mutex.h"
 //如果没加mutex.h头文件
 /* condition.cpp: In member function ‘void Condition::wait(MutexLock&)’:
  condition.cpp:25:32: error: invalid use of incomplete type ‘class MutexLock’

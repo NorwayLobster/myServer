@@ -4,7 +4,7 @@ add_library(${PROJECT_NAME} SHARED
     TaskQueue.cc
     Thread.cc
     Threadpool.cc
-    /MutexLock.cc
+    MutexLock.cc
 )
 
 add_library(sub::theradpool ALIAS ${PROJECT_NAME})

@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-04-16 03:52:08
+ * @LastEditTime: 2020-11-27 10:49:47
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /mymuduo/include/mymuduo/threadpool/Condition.h
+ */
 //
 //  condition.hpp
 //  mutex condition 互斥锁 条件变量的封装
@@ -11,11 +19,12 @@
 
 #include <stdio.h>
 #include <pthread.h>
-#include "Noncopyable.h"
+// #include "Noncopyable.h"
 class MutexLock;
 class Condition: public wd::Noncopyable{
 public:
     Condition();
+    Condition(const Condition&)=delete;
     ~Condition();
     void wait(MutexLock & mutex);
     void notify();
