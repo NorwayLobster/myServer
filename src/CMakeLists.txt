@@ -1,8 +1,7 @@
 # project(mynet)
-add_subdirectory(threadpool)
 add_library(${PROJECT_NAME} SHARED
     Acceptor.cc
-    EpollPoller.cc
+    EventLoop.cc
     InetAddress.cc
     Socket.cc
     SocketIO.cc
@@ -17,7 +16,7 @@ target_include_directories(${PROJECT_NAME}
 )
 target_link_libraries(${PROJECT_NAME}
   PUBLIC
-    sub::theadpool
+    sub::threadpool
 )
 # if( CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT )
 #   message(STATUS "Setting default CMAKE_INSTALL_PREFIX path to ${CMAKE_BINARY_DIR}/install")

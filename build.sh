@@ -1,6 +1,6 @@
 rm -rf ../build
 mkdir ../build
 cd ../build
-cmake ../myNet
+cmake ../mymuduo
 make -j
 make install
