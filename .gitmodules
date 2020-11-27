@@ -1,0 +1,3 @@
+[submodule "3pp/threadpool"]
+	path = 3pp/threadpool
+	url = git@github.com:NorwayLobster/threadpool.git
